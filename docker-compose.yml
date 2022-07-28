@@ -2,21 +2,18 @@ services:
   ##############################
   # Backend Container
   ##############################
-  api-copywrite-container:
+  api-container:
     restart: always
-    image: copywrite-api  
+    image: hagidev/copywrite-api:1.0  
     ports:
       - "3001:3001"
 
   ##############################
   # Frontend Container ##
   ##############################
-  front-container:
-    build:
-        context: ./copywrite-frontend
-        dockerfile: ./dockerfile
-    image: copywrite-frontend:1.0
+  frontend-container:
+    image: hagidev/copywrite-frontend:1.0
     ports:
-      - "80:80"
+      - "8080:80"
       - "443:443"
     tty: true  

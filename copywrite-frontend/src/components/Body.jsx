@@ -14,7 +14,6 @@ const Body = () => {
       className=" bg-white mx-auto mt-5  px-5 py-5"
       style={{ height: "500px", width: "900px" }}
     >
-        {console.log("respuesta de server",response[0])}
       <h3 className="mb-5">Results:</h3>
       <p style={{textAlign:"center"}}>{error}</p>
       <div  className={`row-response ${error!==""?"d-none":""} px-5 d-flex flex-wrap justify-content-center`}>

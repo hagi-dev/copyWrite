@@ -44,6 +44,7 @@ El boilerplate cuenta con dos carpetas: `copywrite-api` y `copywrite-frontend`. 
 - segundo en el frontend debes dirigirte ala carpeta copywrite-frontend y correr el comando "npm install" en la terminal para
 instalar las dependencias.
 - luego ejecutar "npm start" para que puedas ejecutar la app.
+- la app se ejecutara en el puerto 8080 del localhost 
 
 ## puntos claves para el backend
 - para ejecutar el backend debes dirigirte ala carpeta copywrite-api y "npm install" en la terminal para
@@ -51,6 +52,12 @@ instalar las dependencias.
 - luego ejecutar "npm run serve" para utilizarlo.
 - para ejecutar los test tiene que entrar ala carpeta copywrite-api y ahi desde la terminal
 ejecutar npm run test.
+- el server se ejecutara en el puerto 3001 del localhost 
+
+## para utilizar con docker compose 
+- solo tiene que terner instalado en windows docker para que tenga docker compose 
+- ejecute "docker-compose up -d" en el la raiz de los dos proyectos para que pueda ejecutarse los dos carpetas
+- verificar los puertos que estan el en documento  docker-compose.yml 
 
 
 
@@ -65,7 +72,7 @@ La idea general es crear una aplicación en la cual se puedan enviar un texto y 
 ## backend rutas (copywrite-api)
 
 # la unica rutas es : ##
-- [ ] __GET http://localhost/iecho?text=< texto >
+- [ ] __GET https://guarded-sea-96841.herokuapp.com/iecho?text=< texto >
   - Obtiene el texto invertido 
   - Obtine si es palindrome
   - si no se envia el texto obtienes un mensaje de error
