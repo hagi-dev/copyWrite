@@ -64,7 +64,7 @@ La idea general es crear una aplicación en la cual se puedan enviar un texto y 
 
 ## backend rutas (copywrite-api)
 
-# la unica rutas es :
+# la unica rutas es : ##
 - [ ] __GET http://localhost/iecho?text=< texto >
   - Obtiene el texto invertido 
   - Obtine si es palindrome
